@@ -1,0 +1,91 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font Propo", monospace;
+    font-size: 16px;
+    font-weight: bold;
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: #e8eaed;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background: transparent;
+    color: #e8eaed;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+#workspaces button:hover {
+    background: rgba(232, 234, 237, 0.025);
+    box-shadow: none;
+    text-shadow: none;
+}
+
+#workspaces button.active {
+    background: #e8eaed;
+    color: #121212;
+}
+
+#window {
+    padding: 0 6px;
+}
+
+#clock {
+    background: transparent;
+}
+
+#pulseaudio,
+#network,
+#user,
+#custom-icon {
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+#pulseaudio,
+#network,
+#user {
+    background: #e8eaed;
+    color: #121212;
+}
+
+#custom-icon {
+    background: #121212;
+    color: #e8eaed;
+    margin-right: 10px;
+}
+
+#battery {
+    background-color: #ffffff;
+    color: #121212;
+}
+
+#battery.charging {
+    background-color: #121212;
+    color: white;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: black;
+    }
+}
+
+#battery.warning:not(.charging) {
+    background: #f53c3c;
+    color: white;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}

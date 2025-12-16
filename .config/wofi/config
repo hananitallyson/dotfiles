@@ -1,0 +1,16 @@
+[wofi]
+
+mode = drun
+
+run-always-parse-args = true
+
+term = kitty
+
+allow-images = true
+hide-scroll = true
+insensitive = true
+
+prompt = 
+
+height = 35%
+width = 25%

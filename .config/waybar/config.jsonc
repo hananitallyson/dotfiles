@@ -41,7 +41,7 @@
     },
 
     "hyprland/language": {
-        "format": "{}",
+        "format": "layout {}",
 	"format-en": "us",
 	"format-pt": "br"
     },

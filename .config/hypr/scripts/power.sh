@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 selected=$(printf "⏻ Power Off\n Reboot\n󰜉 Suspend\n󰍃 Logout" \
            | wofi --dmenu --lines 5 --prompt "Power Menu" --sort-order=alphabetical --hide-search)

@@ -62,7 +62,7 @@
     },
 
     "user": {
-        "format": "{user} up {work_H}:{work_M}:{work_S}",
+        "format": "up {work_H}:{work_M}:{work_S}",
         "interval": 1
     },
 

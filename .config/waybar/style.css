@@ -42,6 +42,7 @@ window#waybar {
     background: transparent;
 }
 
+#language,
 #pulseaudio,
 #network,
 #user,
@@ -50,6 +51,7 @@ window#waybar {
     padding: 0 10px;
 }
 
+#language,
 #pulseaudio,
 #network,
 #user {

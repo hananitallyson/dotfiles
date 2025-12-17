@@ -15,7 +15,8 @@
     ],
 
     "modules-right": [
-        "pulseaudio",
+        "hyprland/language",
+	"pulseaudio",
         "network",
         "battery",
         "user",
@@ -37,6 +38,12 @@
     "clock": {
         "format-alt": "{:%a, %d. %b  %H:%M}",
 		"tooltip": false
+    },
+
+    "hyprland/language": {
+        "format": "{}",
+	"format-en": "us",
+	"format-pt": "br"
     },
 
     "pulseaudio": {

@@ -35,7 +35,8 @@
 	"rewrite": {
 	    "google-chrome": "chrome"
 	},
-        "separate-outputs": true
+        "separate-outputs": true,
+	"tooltip": false
     },
 
     "clock": {

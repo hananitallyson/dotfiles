@@ -3,7 +3,6 @@
     "position": "top",
     "margin-top": 8,
     "height": 30,
-    "spacing": 10,
 
     "modules-left": [
         "hyprland/workspaces",
@@ -15,8 +14,9 @@
     ],
 
     "modules-right": [
+        "tray",
         "hyprland/language",
-	"pulseaudio",
+        "pulseaudio",
         "network",
         "battery",
         "user",
@@ -37,13 +37,11 @@
 
     "clock": {
         "format-alt": "{:%a, %d. %b  %H:%M}",
-		"tooltip": false
+        "tooltip": false
     },
 
-    "hyprland/language": {
-        "format": "layout {}",
-	"format-en": "us",
-	"format-pt": "br"
+    "tray": {
+        "icon-size": 18
     },
 
     "pulseaudio": {
@@ -61,6 +59,12 @@
         "format-disconnected": "{ifname} off"
     },
 
+    "hyprland/language": {
+        "format": "layout {}",
+        "format-en": "us",
+        "format-pt": "br"
+    },
+
     "user": {
         "format": "up {work_H}:{work_M}:{work_S}",
         "interval": 1
@@ -76,3 +80,4 @@
         "format-icons": ["", "", "", "", ""]
     }
 }
+

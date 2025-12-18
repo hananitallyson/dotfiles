@@ -18,13 +18,12 @@ window#waybar {
     padding: 0 5px;
     background: transparent;
     color: #e8eaed;
-    border: none;
     border-radius: 5px;
     margin-left: 10px;
 }
 
 #workspaces button:hover {
-    background: rgba(232, 234, 237, 0.025);
+    background: rgba(232, 234, 237, 0.05);
     box-shadow: none;
     text-shadow: none;
 }
@@ -35,19 +34,10 @@ window#waybar {
 }
 
 #window {
-    padding: 0 6px;
+    padding: 0 15px;
 }
 
 #clock {
-    background: transparent;
-}
-
-#language,
-#pulseaudio,
-#network,
-#user,
-#custom-icon {
-    border-radius: 5px;
     padding: 0 10px;
 }
 
@@ -59,35 +49,60 @@ window#waybar {
     color: #121212;
 }
 
+#language,
+#pulseaudio,
+#network {
+    padding: 0 12px;
+}
+
+#tray,
+#battery,
+#user,
 #custom-icon {
-    background: #121212;
-    color: #e8eaed;
+    border-radius: 5px;
+    padding: 0 10px;
     margin-right: 10px;
 }
 
+#language {
+    border-radius: 5px 0 0 5px;
+    border-right: 2px solid rgba(12, 12, 12, 0.2);
+}
+
+#pulseaudio {
+    border-right: 2px solid rgba(12, 12, 12, 0.2);
+}
+
+#network {
+    border-radius: 0 5px 5px 0;
+    margin-right: 10px;
+}
+
+#tray,
+#custom-icon {
+    background: #121212;
+    color: #e8eaed;
+}
+
 #battery {
-    background-color: #ffffff;
+    background: #ffffff;
     color: #121212;
 }
 
 #battery.charging {
-    background-color: #121212;
-    color: white;
+    background: #121212;
+    color: #ffffff;
 }
 
 @keyframes blink {
     to {
-        background-color: #ffffff;
-        color: black;
+        background-color: #f53c3c;
+        color: #ffffff;
     }
 }
 
 #battery.warning:not(.charging) {
-    background: #f53c3c;
-    color: white;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: steps(12);
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    background: #ffffff;
+    color: #f53c3c;
+    animation: blink 0.5s steps(12) infinite alternate;
 }

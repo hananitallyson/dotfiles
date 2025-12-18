@@ -44,7 +44,7 @@ window#waybar {
 #tray {
     background: transparent;
     color: #e8eaed;
-    margin: 0 10px;
+    margin: 0 12px;
 }
 
 #tray menu {

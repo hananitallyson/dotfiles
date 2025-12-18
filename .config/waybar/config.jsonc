@@ -76,8 +76,7 @@
     },
 
     "battery": {
-        "format": "{capacity}% {icon}",
-        "format-icons": ["", "", "", "", ""]
+        "format": "<span color='#484848bf'>batt</span> {capacity}%"
     }
 }
 

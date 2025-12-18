@@ -33,7 +33,7 @@
     "hyprland/window": {
         "format": "{class}",
 	"rewrite": {
-	    "google-chrome": "google chrome"
+	    "google-chrome": "chrome"
 	},
         "separate-outputs": true
     },

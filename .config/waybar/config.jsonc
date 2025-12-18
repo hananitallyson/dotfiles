@@ -33,7 +33,8 @@
     "hyprland/window": {
         "format": "{class}",
 	"rewrite": {
-	    "google-chrome": "chrome"
+	    "google-chrome": "chrome",
+	    "com.usebottles.bottles": "bottles"
 	},
         "separate-outputs": true,
 	"tooltip": false

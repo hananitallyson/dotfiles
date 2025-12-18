@@ -41,20 +41,6 @@ window#waybar {
     padding: 0 10px;
 }
 
-#tray {
-    background: transparent;
-    color: #e8eaed;
-    margin: 0 12px;
-}
-
-#tray menu {
-    padding: 10px 0;
-    background: rgba(12, 12, 12, 0.8);
-    color: #e8eaed;
-    border-radius: 5px;
-    border: 2px solid #e8eaed;
-}
-
 #language,
 #pulseaudio,
 #network,

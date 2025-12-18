@@ -14,7 +14,6 @@
     ],
 
     "modules-right": [
-        "tray",
         "hyprland/language",
         "pulseaudio",
         "network",
@@ -43,11 +42,6 @@
     "clock": {
         "format-alt": "{:%a, %d. %b  %H:%M}",
         "tooltip": false
-    },
-
-    "tray": {
-        "icon-size": 20,
-	"spacing": 5
     },
 
     "pulseaudio": {

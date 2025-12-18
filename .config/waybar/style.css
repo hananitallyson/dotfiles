@@ -66,11 +66,11 @@ window#waybar {
 
 #language {
     border-radius: 5px 0 0 5px;
-    border-right: 2px solid rgba(12, 12, 12, 0.2);
+    border-right: 2px solid rgba(12, 12, 12, 0.1);
 }
 
 #pulseaudio {
-    border-right: 2px solid rgba(12, 12, 12, 0.2);
+    border-right: 2px solid rgba(12, 12, 12, 0.1);
 }
 
 #network {

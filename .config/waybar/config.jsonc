@@ -45,8 +45,8 @@
     },
 
     "pulseaudio": {
-        "format": "vol {volume}%",
-        "format-muted": "vol muted",
+        "format": "<span color='#484848bf'>vol</span> {volume}%",
+        "format-muted": "<span color='#484848bf'>vol muted</span>",
         "scroll-step": 1,
         "on-click": "pavucontrol",
         "ignored-sinks": ["Easy Effects Sink"]
@@ -55,18 +55,18 @@
     "network": {
         "interface": "enp9s0",
         "format": "{ifname}",
-        "format-ethernet": "{ifname} on",
-        "format-disconnected": "{ifname} off"
+        "format-ethernet": "<span color='#484848bf'>{ifname}</span> on",
+        "format-disconnected": "<span color='#484848bf'>{ifname}</span> off"
     },
 
     "hyprland/language": {
-        "format": "layout {}",
+        "format": "<span color='#484848bf'>layout</span> {}",
         "format-en": "us",
         "format-pt": "br"
     },
 
     "user": {
-        "format": "up {work_H}:{work_M}:{work_S}",
+        "format": "<span color='#484848bf'>up</span> {work_H}:{work_M}:{work_S}",
         "interval": 1
     },
 

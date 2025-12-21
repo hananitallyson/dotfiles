@@ -17,7 +17,7 @@ window#waybar {
 #workspaces button {
     padding: 0 5px;
     background: transparent;
-    color: #e8eaed;
+    color: #999da0;
     border-radius: 5px;
     margin-left: 10px;
 }
@@ -45,8 +45,8 @@ window#waybar {
 #pulseaudio,
 #network,
 #user {
-    background: #e8eaed;
-    color: #121212;
+    background: #121212;
+    color: #e8eaed;
 }
 
 #language,
@@ -65,11 +65,11 @@ window#waybar {
 
 #language {
     border-radius: 5px 0 0 5px;
-    border-right: 2px solid rgba(12, 12, 12, 0.1);
+    border-right: 2px solid rgba(232, 234, 237, 0.1);
 }
 
 #pulseaudio {
-    border-right: 2px solid rgba(12, 12, 12, 0.1);
+    border-right: 2px solid rgba(232, 234, 237, 0.1);
 }
 
 #network {
@@ -78,8 +78,8 @@ window#waybar {
 }
 
 #custom-icon {
-    background: #121212;
-    color: #e8eaed;
+    background: #e8eaed;
+    color: #121212;
 }
 
 #battery {

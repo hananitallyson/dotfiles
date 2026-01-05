@@ -33,7 +33,8 @@
         "format": "{class}",
 	"rewrite": {
 	    "google-chrome": "chrome",
-	    "com.usebottles.bottles": "bottles"
+	    "com.usebottles.bottles": "bottles",
+	    "org.pwmt.zathura": "zathura"
 	},
         "separate-outputs": true,
 	"tooltip": false

@@ -2,11 +2,10 @@
     "layer": "top",
     "position": "top",
     "margin-top": 8,
-    "height": 30,
+    "height": 28,
 
     "modules-left": [
-        "hyprland/workspaces",
-        "hyprland/window"
+        "hyprland/workspaces"
     ],
 
     "modules-center": [
@@ -18,8 +17,7 @@
         "pulseaudio",
         "network",
         "battery",
-        "user",
-        "custom/icon"
+        "user"
     ],
 
     "hyprland/workspaces": {
@@ -29,19 +27,8 @@
         }
     },
 
-    "hyprland/window": {
-        "format": "{class}",
-	"rewrite": {
-	    "google-chrome": "chrome",
-	    "com.usebottles.bottles": "bottles",
-	    "org.pwmt.zathura": "zathura"
-	},
-        "separate-outputs": true,
-	"tooltip": false
-    },
-
     "clock": {
-        "format-alt": "{:%a, %d. %b  %H:%M}",
+        "format": "{:%H:%M}",
         "tooltip": false
     },
 
@@ -55,9 +42,8 @@
 
     "network": {
         "interface": "enp9s0",
-        "format": "{ifname}",
-        "format-ethernet": "<span color='#999da0'>{ifname}</span> on",
-        "format-disconnected": "<span color='#999da0'>{ifname}</span> off"
+        "format-ethernet": "<span color='#999da0'>net</span> on",
+        "format-disconnected": "<span color='#999da0'>net</span> off"
     },
 
     "hyprland/language": {
@@ -67,17 +53,11 @@
     },
 
     "user": {
-        "format": "<span color='#999da0'>up</span> {work_H}:{work_M}:{work_S}",
-        "interval": 1
-    },
-
-    "custom/icon": {
-        "format": "󰣇",
-        "tooltip": false
+        "format": "<span color='#999da0'>up</span> {work_H}:{work_M}",
+        "interval": 60
     },
 
     "battery": {
-
+        "format": "<span color='#999da0'>bat</span> {capacity}%"
     }
 }
-

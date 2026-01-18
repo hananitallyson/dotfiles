@@ -1,12 +1,11 @@
 * {
-    border: none;
-    border-radius: 0;
-    font-family: "JetBrainsMono Nerd Font Propo", monospace;
-    font-size: 16px;
-    font-weight: bold;
-    min-height: 0;
-    padding: 0;
-    margin: 0;
+border: none;
+font-family: "JetBrainsMono Nerd Font Propo", monospace;
+font-size: 16px;
+font-weight: bold;
+min-height: 0;
+padding: 0;
+margin: 0;
 }
 
 window#waybar {
@@ -15,92 +14,40 @@ window#waybar {
 }
 
 #workspaces button {
-    padding: 0 5px;
-    background: transparent;
-    color: #999da0;
-    border-radius: 5px;
-    margin-left: 10px;
+padding: 0 5px;
+background: transparent;
+color: #999da0;
+margin-left: 10px;
+border-radius: 5px;
 }
 
 #workspaces button:hover {
-    background: rgba(232, 234, 237, 0.05);
-    box-shadow: none;
-    text-shadow: none;
+background: rgba(232, 234, 237, 0.05);
 }
 
 #workspaces button.active {
-    background: #e8eaed;
-    color: #121212;
+background: #e8eaed;
+color: #121212;
 }
 
 #window {
-    padding: 0 15px;
+padding: 0 10px;
 }
 
 #clock {
-    padding: 0 10px;
+padding: 0 8px;
+border-radius: 5px;
 }
 
 #language,
 #pulseaudio,
 #network,
-#user {
-    background: #121212;
-    color: #e8eaed;
-}
-
-#language,
-#pulseaudio,
-#network {
-    padding: 0 12px;
-}
-
 #battery,
 #user,
 #custom-icon {
-    border-radius: 5px;
-    padding: 0 10px;
-    margin-right: 10px;
-}
-
-#language {
-    border-radius: 5px 0 0 5px;
-    border-right: 2px solid rgba(232, 234, 237, 0.2);
-}
-
-#pulseaudio {
-    border-right: 2px solid rgba(232, 234, 237, 0.2);
-}
-
-#network {
-    border-radius: 0 5px 5px 0;
-    margin-right: 10px;
-}
-
-#custom-icon {
-    background: #e8eaed;
-    color: #121212;
-}
-
-#battery {
-    background: #ffffff;
-    color: #121212;
-}
-
-#battery.charging {
-    background: #121212;
-    color: #ffffff;
-}
-
-@keyframes blink {
-    to {
-        background-color: #f53c3c;
-        color: #ffffff;
-    }
-}
-
-#battery.warning:not(.charging) {
-    background: #ffffff;
-    color: #f53c3c;
-    animation: blink 0.5s steps(12) infinite alternate;
+background: transparent;
+color: #e8eaed;
+padding: 0 6px;
+margin-right: 6px;
+border-radius: 5px;
 }

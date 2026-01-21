@@ -1,16 +1,45 @@
 local Vessel = {}
 
 function Vessel.setup()
+  -- Paleta completa dentro do setup
+  local palette = {
+    -- Cores principais
+    black   = "#282828",
+    red     = "#EE5396",
+    green   = "#25be6a",
+    yellow  = "#08BDBA",
+    blue    = "#78A9FF",
+    magenta = "#BE95FF",
+    cyan    = "#33B1FF",
+    orange  = "#3DDBD9",
+    pink    = "#FF7EB6",
+    white   = "#e8eaed",  -- branco fixo
+
+    -- Comentários
+    comment = "#9CA0A4",
+
+    -- Fg
+    fg0     = "#F8FAFC", -- lighter fg
+    fg1     = "#F2F4F8", -- default fg
+    fg2     = "#C1C3C6", -- darker fg (status line)
+    fg3     = "#8C8F93", -- darker fg (line numbers, fold columns)
+
+    -- Seleção
+    sel0    = "#2A2A2A", -- visual selection bg / popup bg
+    sel1    = "#525253", -- popup selection / search bg
+  }
+
+  -- Derivando cores de syntax da paleta
   local colors = {
-    comment  = "#8b949e",
-    keyword  = "#58a6ff",
-    string   = "#a5d6a7",
-    number   = "#f38ba8",
-    func     = "#79c0ff",
-    type     = "#7ee787",
-    constant = "#f9e2af",
-    variable = "#e8eaed",
-    operator = "#79c0ff",
+    comment  = palette.comment,
+    keyword  = palette.magenta,
+    string   = palette.green,
+    number   = palette.orange,
+    func     = palette.blue,
+    type     = palette.yellow,
+    constant = palette.orange,
+    variable = palette.white,
+    operator = palette.blue,
   }
 
   local function apply_highlights()

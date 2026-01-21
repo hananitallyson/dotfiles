@@ -76,31 +76,6 @@ function Vessel.setup()
     hl(0, "HarpoonWindow",  { fg = palette.variable, bg = palette.bg })
     hl(0, "HarpoonNormal",  { fg = palette.variable, bg = palette.bg })
 
-    -- Lualine com bg NONE
-    local lualine_colors = {
-      normal = { a = { fg = palette.variable, bg = palette.bg, gui = "bold" },
-      b = { fg = palette.variable, bg = palette.bg },
-      c = { fg = palette.variable, bg = palette.bg } },
-      insert = { a = { fg = palette.variable, bg = palette.bg, gui = "bold" },
-      b = { fg = palette.variable, bg = palette.bg },
-      c = { fg = palette.variable, bg = palette.bg } },
-      visual = { a = { fg = palette.variable, bg = palette.bg, gui = "bold" },
-      b = { fg = palette.variable, bg = palette.bg },
-      c = { fg = palette.variable, bg = palette.bg } },
-      replace = { a = { fg = palette.variable, bg = palette.bg, gui = "bold" },
-      b = { fg = palette.variable, bg = palette.bg },
-      c = { fg = palette.variable, bg = palette.bg } },
-      inactive = { a = { fg = palette.variable, bg = palette.bg, gui = "bold" },
-      b = { fg = palette.variable, bg = palette.bg },
-      c = { fg = palette.variable, bg = palette.bg } },
-    }
-
-    for mode, sections in pairs(lualine_colors) do
-      for section, col in pairs(sections) do
-        local hl_name = "Lualine" .. mode:gsub("^%l", string.upper) .. section:upper()
-        hl(0, hl_name, { fg = col.fg, bg = col.bg, bold = col.gui == "bold" })
-      end
-    end
   end
 
   apply_highlights()

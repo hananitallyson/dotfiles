@@ -1,4 +1,3 @@
-require('config.options')
-require('config.keybinds')
-require('config.colors').setup()
-require('config.lazy')
+require("config.lazy")
+require("config.keymaps")
+require('colors.vessel').setup()

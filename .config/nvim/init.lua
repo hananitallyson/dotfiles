@@ -1,3 +1,3 @@
 require("config.lazy")
 require("config.keymaps")
-require('colors.vessel').setup()
+require("config.colorscheme").setup()

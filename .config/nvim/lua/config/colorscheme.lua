@@ -40,17 +40,15 @@ function Vessel.setup()
     hl(0, "HarpoonNormal", { fg = colors.variable, bg = "NONE" })
 
     -- Telescope
-    hl(0, "TelescopeNormal",         { link = "Normal" })
-    hl(0, "TelescopeBorder",         { link = "FloatBorder" })
-    hl(0, "TelescopePromptNormal",   { link = "Normal" })
-    hl(0, "TelescopeResultsNormal",  { link = "Normal" })
-    hl(0, "TelescopePreviewNormal",  { link = "Normal" })
+    hl(0, "TelescopeNormal",        { link = "Normal" })
+    hl(0, "TelescopeBorder",        { link = "FloatBorder" })
+    hl(0, "TelescopePromptNormal",  { link = "Normal" })
+    hl(0, "TelescopeResultsNormal", { link = "Normal" })
+    hl(0, "TelescopePreviewNormal", { link = "Normal" })
   end
 
-  -- aplica imediatamente
   apply_highlights()
 
-  -- reaplica sempre que trocar o colorscheme
   vim.api.nvim_create_autocmd("ColorScheme", {
     callback = apply_highlights,
   })

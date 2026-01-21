@@ -67,15 +67,15 @@ return {
       })
 
       vim.lsp.config("clangd", {
-      	on_attach = on_attach,
-     	capabilities = capabilities,
-      	cmd = {
-        	"clangd",
-    		"--background-index",
-    		"--clang-tidy",
-    		"--completion-style=detailed",
-    		"--header-insertion=iwyu",
-      	      },
+        on_attach = on_attach,
+        capabilities = capabilities,
+        cmd = {
+          "clangd",
+          "--background-index",
+          "--clang-tidy",
+          "--completion-style=detailed",
+          "--header-insertion=iwyu",
+        },
       })
 
     end,

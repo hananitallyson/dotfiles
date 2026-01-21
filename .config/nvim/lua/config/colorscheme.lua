@@ -1,17 +1,17 @@
 local Vessel = {}
 
 function Vessel.setup()
-local colors = {
-  comment  = "#8b949e",
-  keyword  = "#58a6ff",
-  string   = "#a5d6a7",
-  number   = "#f38ba8",
-  func     = "#79c0ff",
-  type     = "#7ee787",
-  constant = "#f9e2af",
-  variable = "#e8eaed",
-  operator = "#79c0ff",
-}
+  local colors = {
+    comment  = "#8b949e",
+    keyword  = "#58a6ff",
+    string   = "#a5d6a7",
+    number   = "#f38ba8",
+    func     = "#79c0ff",
+    type     = "#7ee787",
+    constant = "#f9e2af",
+    variable = "#e8eaed",
+    operator = "#79c0ff",
+  }
 
   local function apply_highlights()
     local hl = vim.api.nvim_set_hl

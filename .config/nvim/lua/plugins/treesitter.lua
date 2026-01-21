@@ -7,7 +7,7 @@ return {
     opts = {
       ensure_installed = {
         "c",
-	"lua",
+        "lua",
         "vim",
         "vimdoc",
         "bash",

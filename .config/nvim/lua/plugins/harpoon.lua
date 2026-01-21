@@ -10,16 +10,16 @@ local function harpoon_telescope(list)
   end
 
   pickers
-    .new(themes.get_ivy({
-      prompt_title = "Harpoon",
-    }), {
-      finder = finders.new_table({
-        results = files,
-      }),
-      previewer = conf.file_previewer({}),
-      sorter = conf.generic_sorter({}),
-    })
-    :find()
+  .new(themes.get_ivy({
+    prompt_title = "Harpoon",
+  }), {
+    finder = finders.new_table({
+      results = files,
+    }),
+    previewer = conf.file_previewer({}),
+    sorter = conf.generic_sorter({}),
+  })
+  :find()
 end
 
 return {

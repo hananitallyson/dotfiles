@@ -1,4 +1,4 @@
--- config/nvim/lua/plugins/harpoon.lua
+-- ~/.config/nvim/lua/plugins/harpoon.lua
 local function harpoon_telescope(list)
   local conf = require("telescope.config").values
   local pickers = require("telescope.pickers")

@@ -1,4 +1,4 @@
--- config/nvim/lua/plugins/lualine.lua
+-- ~/.config/nvim/lua/plugins/lualine.lua
 return {
   {
     "nvim-lualine/lualine.nvim",

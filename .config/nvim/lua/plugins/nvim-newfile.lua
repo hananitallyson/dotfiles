@@ -1,3 +1,4 @@
+-- config/nvim/lua/plugins/nvim-newline.lua
 return {
   "adibhanna/nvim-newfile.nvim",
   dependencies = { "MunifTanjim/nui.nvim" },

@@ -23,7 +23,9 @@ return {
   {
     "neovim/nvim-lspconfig",
     event = { "BufReadPre", "BufNewFile" },
+    dependencies = { "saghen/blink.cmp" },
     config = function()
+      local blink_cmp = require("blink.cmp")
       local on_attach = function(_, bufnr)
         local map = function(mode, lhs, rhs)
           vim.keymap.set(mode, lhs, rhs, { buffer = bufnr })
@@ -38,9 +40,11 @@ return {
         map("n", "]d", vim.diagnostic.goto_next)
       end
 
+      -- Cria capabilities mesclando com blink.cmp
       local capabilities = vim.lsp.protocol.make_client_capabilities()
+      capabilities = blink_cmp.get_lsp_capabilities(capabilities)
 
-      -- API NOVA (Neovim >= 0.11)
+      -- Lua
       vim.lsp.config("lua_ls", {
         on_attach = on_attach,
         capabilities = capabilities,
@@ -52,21 +56,25 @@ return {
         },
       })
 
+      -- Python
       vim.lsp.config("pyright", {
         on_attach = on_attach,
         capabilities = capabilities,
       })
 
+      -- TypeScript / JavaScript
       vim.lsp.config("ts_ls", {
         on_attach = on_attach,
         capabilities = capabilities,
       })
 
+      -- Bash
       vim.lsp.config("bashls", {
         on_attach = on_attach,
         capabilities = capabilities,
       })
 
+      -- C / C++
       vim.lsp.config("clangd", {
         on_attach = on_attach,
         capabilities = capabilities,
@@ -78,7 +86,6 @@ return {
           "--header-insertion=iwyu",
         },
       })
-
     end,
   },
 }

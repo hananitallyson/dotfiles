@@ -13,13 +13,6 @@ return {
 
     -- Configuração do plugin
     newfile.setup({
-      languages = {
-        go = { enabled = true, package_format = "package %s", use_directory_name = true, file_extensions = { "go" } },
-        php = { enabled = true, package_format = "<?php\n\nnamespace %s;", use_directory_name = false, file_extensions = { "php" } },
-        java = { enabled = true, package_format = "package %s;", use_directory_name = false, file_extensions = { "java" } },
-        rust = { enabled = true, package_format = "// Module: %s", use_directory_name = true, file_extensions = { "rs" } },
-        python = { enabled = true, package_format = '"""Package: %s"""', use_directory_name = false, file_extensions = { "py" } },
-      },
       project_root_patterns = { "go.mod", "composer.json", "pom.xml", "build.gradle", "build.sbt", "package.json", ".git", "Cargo.toml", "Makefile" },
       ui = { border_style = "rounded", prompt_text = "File name: ", width = 50, height = 1 },
       notifications = { enabled = true },

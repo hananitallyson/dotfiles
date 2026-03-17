@@ -1,68 +1,69 @@
-window {
-    all: unset;
-    margin: 0;
-    padding: 0;
-    border: 2px solid #e8eaed;
-    background-color: rgba(8, 8, 8, 0.9);
-    border-radius: 10px;
-    font-family: "JetBrainsMono Nerd Font Propo", monospace;
-    font-size: 22px;
-    opacity: 0.96;
+* {
+border: none;
+font-family: "JetBrainsMono Nerd Font Propo", monospace;
+font-size: 24px;
+font-weight: 600;
+min-height: 0;
+padding: 0;
+margin: 0;
 }
 
-#input, #text {
-    margin: 5px;
-    color: #e8eaed;
+window {
+background: rgba(3, 3, 3, 0.9);
+color: #e8eaed;
+border: 2px solid #e8eaed;
+}
+
+#outer-box {
+padding: 20px;
 }
 
 #input {
-    padding: 5px 10px;
-    border: none;
-    background-color: #080808;
+margin: 0 0 10px 0;
+padding: 6px 10px;
+background: transparent;
+color: #e8eaed;
 }
 
-#text {
-    border: none;
+#inner-box {
+background: transparent;
 }
 
-#inner-box, #outer-box {
-    margin: 5px;
-    border: none;
-    background-color: #080808;
+#entry {
+padding: 6px 10px;
+margin: 2px 0;
+color: #7f848e;
 }
 
-#scroll {
-    margin: 0;
-    border: none;
-}
-
-#entry.activatable #text, #entry > * {
-    color: #e8eaed;
-}
-
-entry:focus {
-    border: none;
-    outline: none;
-    box-shadow: none;
+#entry:hover {
+color: #e8eaed;
 }
 
 #entry:selected {
-    background-color: #101010;
-    border: none;
-    outline: none;
-    box-shadow: none;
+background: transparent;
+color: #e8eaed;
+outline: none;
+box-shadow: none;
 }
 
-#entry:selected #text {
-    font-weight: bold;
+#entry:focus {
+outline: none;
+box-shadow: none;
+}
+
+#text {
+color: inherit;
+}
+
+#scroll {
+margin: 0;
 }
 
 scrollbar {
-    min-width: 6px;
-    background: transparent;
-    border: none;
+min-width: 6px;
+background: transparent;
 }
 
 scrollbar slider {
-    background: #e8eaed;
+background: #e8eaed;
 }

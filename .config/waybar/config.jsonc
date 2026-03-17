@@ -1,8 +1,7 @@
 {
   "layer": "top",
   "position": "top",
-  "margin-top": 8,
-  "height": 28,
+  "height": 38,
 
   "modules-left": [
     "hyprland/workspaces"
@@ -14,8 +13,7 @@
     "hyprland/language",
     "pulseaudio",
     "network",
-    "battery",
-    "user"
+    "battery"
   ],
 
   "hyprland/workspaces": {
@@ -42,20 +40,19 @@
   },
 
   "network": {
-    "interface": "enp9s0",
-    "format-ethernet": "<span color='#999da0'>net</span> on",
-    "format-disconnected": "<span color='#999da0'>net</span> off"
+    "format": "<span color='#999da0'>{ifname}</span>",
+    "format-wifi": "<span color='#999da0'>wifi</span> on",
+    "format-ethernet": "<span color='#999da0'>eth</span> on",
+    "format-disconnected": "<span color='#999da0'>net</span> off",
+    "tooltip-format": "<span color='#999da0'>{ipaddr}</span>",
+    "on-click": "NEWT_COLORS='root=#e8eaed,#030303 border=#7f848e,#030303 window=#030303,#030303 shadow=#000000,#000000 title=#e8eaed,#030303 button=#c9ccd1,#030303 button_active=#e8eaed,#7f848e actbutton=#e8eaed,#7f848e compactbutton=#c9ccd1,#030303 checkbox=#e8eaed,#030303 entry=#c9ccd1,#030303 disentry=#7f848e,#030303 textbox=#c9ccd1,#030303 acttextbox=#e8eaed,#7f848e label=#c9ccd1,#030303 listbox=#c9ccd1,#030303 actlistbox=#e8eaed,#7f848e sellistbox=#e8eaed,#030303 actsellistbox=#030303,#e8eaed' kitty --single-instance --override window_decorations=none -e nmtui",
+    "max-length": 50
   },
-
+  
   "hyprland/language": {
     "format": "<span color='#999da0'>lang</span> {}",
     "format-en": "us",
     "format-pt": "br"
-  },
-
-  "user": {
-    "format": "<span color='#999da0'>up</span> {work_H}:{work_M}",
-    "interval": 60
   },
 
   "battery": {

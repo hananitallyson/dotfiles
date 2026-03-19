@@ -1,38 +1,38 @@
 * {
-border: none;
-font-family: "JetBrainsMono Nerd Font Propo", monospace;
-font-size: 18px;
-font-weight: 600;
-min-height: 0;
-padding: 0;
-margin: 0;
+  border: none;
+  font-family: "JetBrainsMono Nerd Font Propo", monospace;
+  font-size: 18px;
+  font-weight: 600;
+  min-height: 0;
+  padding: 0;
+  margin: 0;
 }
 
 window#waybar {
-background: rgba(3, 3, 3, 0.5);
-color: #e8eaed;
+  background: rgba(3, 3, 3, 0.5);
+  color: #e8eaed;
 }
 
 #workspaces button {
-padding: 0 6px;
-margin-left: 8px;
-background: transparent;
-border-radius: 0;
-color: #7f848e;
+  padding: 0 6px;
+  margin-left: 8px;
+  background: transparent;
+  border-radius: 0;
+  color: #7f848e;
 }
 
 #workspaces button:hover {
-color: #e8eaed;
-border-radius: 0;
+  color: #e8eaed;
+  border-radius: 0;
 }
 
 #workspaces button.active {
-color: #e8eaed;
+  color: #e8eaed;
 }
 
 #window {
-padding: 0 10px;
-color: #9aa0a6;
+  padding: 0 10px;
+  color: #9aa0a6;
 }
 
 #clock,
@@ -41,8 +41,8 @@ color: #9aa0a6;
 #network,
 #battery,
 #custom-icon {
-padding: 0 8px;
-margin-right: 4px;
-background: transparent;
-color: #c9ccd1;
+  padding: 0 8px;
+  margin-right: 4px;
+  background: transparent;
+  color: #c9ccd1;
 }

@@ -1,0 +1,14 @@
+--verbose=1
+--ignore=RCS
+--ignore=SCCS
+--ignore=CVS
+--ignore=.git
+--ignore=.svn
+--ignore=.hg
+--ignore=.bzr
+--ignore=install.sh
+--ignore=.gitignore
+--ignore=.gitattributes
+--ignore=.gitmodules
+--ignore=.gitkeep
+--ignore=README.md

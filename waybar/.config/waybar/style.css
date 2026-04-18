@@ -1,0 +1,63 @@
+* {
+  border: none;
+  font-family: "MartianMono Nerd Font Propo", monospace;
+  font-size: 16px; 
+  font-weight: 600;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  transition: none;
+  animation: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+window#waybar {
+  background: rgba(10, 10, 10, 0.5);
+  color: #e8e8e8;
+}
+
+.modules-left {
+  margin-left: 12px;
+}
+
+.modules-right {
+  margin-right: 12px;
+}
+
+.modules-right > widget:nth-child(even) {
+    background: #e8e8e8;
+    color: #080808;
+    padding: 0 10px;
+}
+
+.modules-right > widget:nth-child(odd) {
+    background: none;
+    color: #e8e8e8;
+    padding: 0 10px;
+}
+
+#workspaces button {
+  color: #cacaca;
+  min-width: 32px;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+}
+
+#workspaces button.active {
+  background: #e8e8e8;
+  color: #1a1a1a;
+}
+
+#custom-hostname,
+#clock,
+#language,
+#pulseaudio,
+#network,
+#battery,
+#custom-icon {
+  padding: 0 10px;
+}

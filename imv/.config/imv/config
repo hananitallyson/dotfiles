@@ -1,0 +1,37 @@
+[options]
+suppress_default_binds = true
+
+[binds]
+q = quit
+x = close
+
+<Left>    = prev
+<Right>   = next
+gg        = goto 1
+<Shift+G> = goto -1
+
+i             = zoom 1
+o             = zoom -1
+<equal>       = zoom 1
+<minus>       = zoom -1
+a             = zoom actual
+r             = reset
+s             = scaling next
+
+h             = pan 50 0
+l             = pan -50 0
+j             = pan 0 -50
+k             = pan 0 50
+<Shift+Right> = pan 50 0
+<Shift+Left>  = pan -50 0
+<Shift+Down>  = pan 0 50
+<Shift+Up>    = pan 0 -50
+c             = center
+
+f = fullscreen
+d = overlay
+
+<space>   = toggle_playing
+<period>  = next_frame
+t         = slideshow +1
+<Shift+T> = slideshow -1

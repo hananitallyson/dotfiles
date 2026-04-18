@@ -1,0 +1,5 @@
+vim.keymap.set("n", "<leader>tt", require("features.terminal").toggle, { noremap = true, silent = true })
+vim.keymap.set("t", "<Esc>", function()
+	vim.cmd("stopinsert")
+	vim.api.nvim_win_close(0, true)
+end, { noremap = true, silent = true })

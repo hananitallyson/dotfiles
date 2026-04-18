@@ -1,0 +1,20 @@
+# --- tofi ---
+
+prompt-text = "$ "
+background-color = #0a0a0add
+width = 100%
+padding-left = 35%
+padding-top = 30%
+height = 100%
+border-width = 0
+outline-width = 0
+result-spacing = 14
+num-results = 8
+font = MartianMono Nerd Font
+font-variations = "wght 600"
+font-size = 24
+text-color = #b8b8b8
+prompt-color = #4a4a4a
+selection-color = #f5f5f5
+selection-background = #2a2a2a
+placeholder-color = #4a4a4a

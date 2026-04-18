@@ -1,0 +1,5 @@
+require("settings.options")
+require("settings.plugins")
+require("settings.keymaps")
+require("features.terminal")
+require("themes.ink").setup()

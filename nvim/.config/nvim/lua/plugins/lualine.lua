@@ -4,7 +4,7 @@ local lualine = require("lualine")
 
 local base = {
 	a = { fg = "#0a0a0a", bg = "#e8e8e8", gui = "bold" },
-	b = { fg = "#e88e8e", bg = "#0a0a0a", gui = "bold" },
+	b = { fg = "#808080", bg = "#0a0a0a", gui = "bold" },
 	c = { fg = "#e8e8e8", bg = "#0a0a0a", gui = "bold" },
 	x = { fg = "#e8e8e8", bg = "#0a0a0a", gui = "bold" },
 	y = { fg = "#e8e8e8", bg = "#0a0a0a", gui = "bold" },

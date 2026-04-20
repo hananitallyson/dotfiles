@@ -16,12 +16,16 @@ function fish_prompt
 
     if test $last_status -ne 0
         set_color '#4a4a4a'
+        printf ' [%d]' $last_status
+        set_color '#f5f5f5'
     else
         set_color '#f5f5f5'
     end
+
     printf '$ '
     set_color normal
 end
+
 
 set -q ASDF_DATA_DIR; or set -gx ASDF_DATA_DIR "$HOME/.asdf"
 

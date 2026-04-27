@@ -9,3 +9,5 @@ require("plugins.blink")
 require("plugins.lsp")
 require("plugins.conform")
 require("plugins.neoscroll")
+require("plugins.autotag")
+

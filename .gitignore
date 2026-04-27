@@ -8,3 +8,5 @@ Thumbs.db
 .env
 *.key
 *.pem
+nvim/**/nvim-pack-lock.json
+

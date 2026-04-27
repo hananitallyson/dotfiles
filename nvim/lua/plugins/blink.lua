@@ -4,6 +4,7 @@ vim.pack.add({
 		version = "v1.10.2",
 	},
 })
+
 require("blink.cmp").setup({
 	keymap = { preset = "none" },
 	appearance = {
@@ -19,3 +20,4 @@ require("blink.cmp").setup({
 		},
 	},
 })
+

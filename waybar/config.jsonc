@@ -46,6 +46,7 @@
         "format-ethernet": "ETH__ON",
         "format-disconnected": "NET__OFF",
         "tooltip-format": "{ipaddr}",
+        "on-click": "NEWT_COLORS='root=#e8eaed,#030303 border=#7f848e,#030303 window=#030303,#030303 shadow=#000000,#000000 title=#e8eaed,#030303 button=#c9ccd1,#030303 button_active=#e8eaed,#7f848e actbutton=#e8eaed,#7f848e compactbutton=#c9ccd1,#030303 checkbox=#e8eaed,#030303 entry=#c9ccd1,#030303 disentry=#7f848e,#030303 textbox=#c9ccd1,#030303 acttextbox=#e8eaed,#7f848e label=#c9ccd1,#030303 listbox=#c9ccd1,#030303 actlistbox=#e8eaed,#7f848e sellistbox=#e8eaed,#030303 actsellistbox=#030303,#e8eaed' kitty --single-instance --override window_decorations=none -e nmtui",
         "max-length": 50
     },
     "hyprland/language": {

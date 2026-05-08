@@ -10,4 +10,5 @@ require("plugins.lsp")
 require("plugins.conform")
 require("plugins.neoscroll")
 require("plugins.autotag")
+require("plugins.luasnip")
 

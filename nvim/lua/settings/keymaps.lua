@@ -8,3 +8,5 @@ require("keymaps.harpoon")
 require("keymaps.blink")
 require("keymaps.conform")
 require("keymaps.neoscroll")
+require("keymaps.luasnip")
+

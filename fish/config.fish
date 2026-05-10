@@ -26,6 +26,7 @@ function fish_prompt
     set_color normal
 end
 
+set -Ux fish_user_paths $HOME/.local/bin $fish_user_paths
 
 set -q ASDF_DATA_DIR; or set -gx ASDF_DATA_DIR "$HOME/.asdf"
 
